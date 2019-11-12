@@ -10,11 +10,11 @@ class Solution {
 
             if (nums[i]<target){
                 pointer++;
-                System.out.println(pointer+"-->"+i);
+                //System.out.println(pointer+"-->"+i);
             }
 
             if(nums[i]>target){
-                System.out.println(pointer+"-->"+i);
+                //System.out.println(pointer+"-->"+i);
                 return pointer;
             }
             if(nums[i]==target) {
