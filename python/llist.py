@@ -18,6 +18,7 @@ class LinkedList:
     def __repr__(self):
         return "->".join(self.helperFunction(self.headval))
 
+    # IMPROV: Using generator instead of iterator.
     # Recursive traversal and print linked list - O(n)
     def helperFunction(self,node):
         if node:
@@ -48,7 +49,7 @@ class LinkedList:
         NewNode = Node(new_data)
         NewNode.next = middle_node.next
         middle_node.next = NewNode
-    # Delete the selected node. Need to traverse the list - O(n)-
+    # Delete the selected node. Need to traverse the list - O(n)
     def removeNode(self, delete_node):
         node = self.headval
         target_node = self.delete_node(node,delete_node)
